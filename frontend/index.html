@@ -92,6 +92,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 <footer><span>PawnVault — Collateralized NFT lending with on-chain repay and default on BOT Chain</span><span>&#8226;Chain ID <b>677</b> &#8226;Contract <span class="mono">0x0000000000000000000000000000000000000000</span></span><span>&#8226; <a href="https://botchain.ai" target="_blank" rel="noopener">BOT Chain Website</a> &#8226; <a href="https://scan.botchain.ai/" target="_blank" rel="noopener">BOTScan Explorer</a></span></footer>
 <div id="toast"></div>
 <script>
+const PROJECT_ID = 'ee6081d44f535b82b71aa2003badb2b7'; // AppKit project ID — wired for BOT Chain 677
+
 const ABI=[
 'function requestLoan(address nft,uint256 tokenId,uint256 amount,uint256 interestBps,uint256 duration) returns (uint256)',
 'function fundLoan(uint256 id) payable','function repayLoan(uint256 id) payable','function defaultLoan(uint256 id)',
