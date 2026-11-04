@@ -4,7 +4,7 @@ Request an NFT-backed loan and inspect its funding and repayment state.
 
 ## Mainnet status
 
-Mainnet deployment is pending. The interface does not simulate transactions or balances.
+Contract on BOT Chain mainnet (677): [0x0Fba887e4dc35113dC9700628a9F430b3AB95d5F](https://scan.botchain.ai/address/0x0Fba887e4dc35113dC9700628a9F430b3AB95d5F).
 
 Wallet actions require BOT Chain mainnet, deployed bytecode, and a connected compatible wallet. Every action is simulated before a transaction review; only a subsequent wallet confirmation can send it.
 
@@ -19,11 +19,12 @@ Wallet actions require BOT Chain mainnet, deployed bytecode, and a connected com
 
 ## Contract interface
 
-`frontend/product.json` uses the ABI compiled from the current Solidity source.
+`frontend/product.json` uses the current-source ABI, matched against the deployed mainnet runtime bytecode. Explorer source publication is tracked separately.
 
 | Action | Contract signature |
 |---|---|
-| Mark a default (owner only) | `defaultLoan(uint256)` |
+| Cancel Loan | `cancelLoan(uint256)` |
+| Mark a default | `defaultLoan(uint256)` |
 | Fund a loan | `fundLoan(uint256)` |
 | Repay your loan | `repayLoan(uint256)` |
 | Request a loan | `requestLoan(address,uint256,uint256,uint256,uint256)` |

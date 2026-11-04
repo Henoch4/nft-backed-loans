@@ -1,9 +1,9 @@
 {
-  "abiSource": "pending-current-source",
+  "abiSource": "runtime-matched-current-source",
   "repo": "pawnvault",
   "brand": "Pawnvault",
   "summary": "Request an NFT-backed loan and inspect its funding and repayment state.",
-  "address": null,
+  "address": "0x0Fba887e4dc35113dC9700628a9F430b3AB95d5F",
   "owner": null,
   "abi": [
     {
